@@ -1,0 +1,6 @@
+C:\Users\Asus\Desktop\c#\EShop\Classes\bin\Debug\Classes.dll
+C:\Users\Asus\Desktop\c#\EShop\Classes\bin\Debug\Classes.pdb
+C:\Users\Asus\Desktop\c#\EShop\Classes\obj\Debug\Classes.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\c#\EShop\Classes\obj\Debug\Classes.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\c#\EShop\Classes\obj\Debug\Classes.dll
+C:\Users\Asus\Desktop\c#\EShop\Classes\obj\Debug\Classes.pdb

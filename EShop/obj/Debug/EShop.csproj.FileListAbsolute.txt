@@ -1,0 +1,10 @@
+C:\Users\Asus\Desktop\c#\EShop\EShop\bin\Debug\EShop.exe.config
+C:\Users\Asus\Desktop\c#\EShop\EShop\bin\Debug\EShop.exe
+C:\Users\Asus\Desktop\c#\EShop\EShop\bin\Debug\EShop.pdb
+C:\Users\Asus\Desktop\c#\EShop\EShop\bin\Debug\Classes.dll
+C:\Users\Asus\Desktop\c#\EShop\EShop\bin\Debug\Classes.pdb
+C:\Users\Asus\Desktop\c#\EShop\EShop\obj\Debug\EShop.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\c#\EShop\EShop\obj\Debug\EShop.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\c#\EShop\EShop\obj\Debug\EShop.csproj.CopyComplete
+C:\Users\Asus\Desktop\c#\EShop\EShop\obj\Debug\EShop.exe
+C:\Users\Asus\Desktop\c#\EShop\EShop\obj\Debug\EShop.pdb
