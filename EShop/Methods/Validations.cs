@@ -9,8 +9,6 @@ namespace EShop.Methods
 {
     public static class Validations
     {
-        public delegate void ChoosePayment(string answer);
-        public delegate void ShipInfo(string street, int number, Place place, Provider provider);
         public static int count = 1;
         public static User  CheckUserName(string name,List<User> users)
         {
@@ -72,6 +70,25 @@ namespace EShop.Methods
                 } 
             } while (vendor != "1" || vendor != "2" || vendor != "3");
         }
+        static event Action<string> card = PayWithCreditCard;
+        static event Action<string> paypal = PayWithPayPal;
+        public static void PayInfo(string pay)
+        {
+            Console.WriteLine("How do you like to pay?\n1.Credit Card\n2.PayPal");
+            pay = Console.ReadLine();
+            if (pay == "1")
+            {
+                card(pay);
+            }
+            else if (pay == "2")
+            {
+                paypal(pay);
+            }
+            else
+            {
+                Console.WriteLine("Please choose 1 or 2");
+            }
+        }
         public static void ProductName(string name,List<Product> products)
         {
             name = Console.ReadLine().ToLower();
@@ -122,25 +139,6 @@ namespace EShop.Methods
         public static void PayWithPayPal(string answer)
         {
             Console.WriteLine("You choose PayPal");
-        }
-        public static void PayInfo(string pay)
-        {
-            Console.WriteLine("How do you like to pay?\n1.Credit Card\n2.PayPal");
-            pay = Console.ReadLine();
-            if (pay == "1")
-            {
-                ChoosePayment card = PayWithCreditCard;
-                card(pay);
-            }
-            else if (pay == "2")
-            {
-                ChoosePayment paypal = PayWithPayPal;
-                paypal(pay);
-            }
-            else
-            {
-                Console.WriteLine("Please choose 1 or 2");
-            }
         }
         public static void ShipYouOrder(string street,int number,Place place,Provider provider)
         {

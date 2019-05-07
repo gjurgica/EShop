@@ -148,9 +148,10 @@ namespace EShop
                     Console.WriteLine("Please enter 1 or 2");
                 }
             } while (strProvider != "1" || strProvider != "2");
-            Methods.Validations.ShipInfo info = Methods.Validations.ShipYouOrder;
-            info(street, number, place, provider);
+            
+            ShipInfo(street, number, place, provider);
             Console.ReadLine();
         }
+        public static event Action<string, int, Place, Provider> ShipInfo = Methods.Validations.ShipYouOrder;
     }
 }
